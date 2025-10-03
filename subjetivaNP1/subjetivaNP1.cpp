@@ -17,9 +17,17 @@ int main(){
         qtd_l = dist/km_l;
         vlr_ab = qtd_l * vlr_comb;
 
+        if(vm > 20){
+            for(int i = vm; i > 20; i = i - 20){
+                km_l = km_l * 0.9;
+                printf("\nAutonomia do veículo: %.2fKm/L", km_l);
+            }
+        }
+
         printf("Tempo gasto na viagem: %.2f h\n", t);
         printf("Quantidade de combustivel gasta: %.2fL\n", qtd_l);
         printf("Valor gasto com combustivel: R$ %.2f\n", vlr_ab);
+        
 
         return 0;
 }
