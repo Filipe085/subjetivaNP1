@@ -1,8 +1,8 @@
 #include <stdio.h>
-
+#include <math.h>
 
 int main(){
-        float vm, km_l, dist, vlr_comb, t, qtd_l, vlr_ab, gas, tank, tank_qty, rest;
+        float vm, km_l, dist, vlr_comb, t, qtd_l, vlr_ab, gas, tank, tank_qty, rest ;
         int  tank_quest;
        
 
@@ -42,7 +42,7 @@ int main(){
                 int stops = 0;// paradas
             
             if(tank_qty < qtd_l){
-                stops =  (int)ceil(rest/tank);
+                stops =  (int) ceil(rest/tank);
                 printf("vc ira para %d \n", stops);
             } 
                 else{
@@ -57,7 +57,7 @@ int main(){
      
             printf("\nAutonomia do veículo: %.2fKm/L\n", km_l);          
             printf("\nTempo gasto na viagem: %.2f h\n", t);
-            printf("Quantidade de combustivel gasta: %.2fL \n", qtd_l, );
+            printf("Quantidade de combustivel gasta: %.2fL \n", qtd_l );
             printf("Valor gasto com combustivel: R$ %.2f\n", vlr_ab);
             
 
